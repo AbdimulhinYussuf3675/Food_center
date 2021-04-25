@@ -12,19 +12,167 @@
 
 <body>
     <div class="topnav">
-        <a href="#Contact us">Contact us</a>        
-        <!-- <a href="#About Us"></a> -->
+        <a href="#Contact us">Contact us</a>
+        <a href="#Order">Order</a>
         <a href="#Services">Services</a>
         <a href="#Home">Home</a>
     </div>
     <div class="Home">
-        <div id="intro">
-            <h1><strong>Jabane Pizza-in!</strong></h1>
-            <p id="welcome">Grab yours today!! We offer all sizes of Pizza <strong>Welcome</strong></p>
+        <div class="introduction">
+            <div id="intro">
+                <h1><strong>Jabane Pizza-in!</strong></h1>
+                <p id="welcome">Grab yours today!! We offer all sizes of Pizza <strong>Welcome</strong></p>
+                <h2><strong>About Us</strong></h2>
+                <p>Jabane was officially opened on Feb 29th 2016. We have been serving our honerable costomers
+                    with respect</p>
+                <P>its has also created lot of job oppotunities to the neighbouhood of Mandera people </P>
+                <h2><strong>Location</strong></h2>
+                <p>Jabane is located in Mandera Town, near bus park</p>
+            </div>
         </div>
-
-
     </div>
+    <div id="Services">
+        <h1><strong>Services Offered</strong></h1>
+        <div class="aboutus">
+            <div id="About">
+                <div class="about">
+                    <div class="aboutme">
+                        <h2><strong>Services Offered</strong></h2>
+                        <ul>
+                            <li>Soft Drinks</li>
+                            <LI>Chicken-in</LI>
+                            <li>Pizza-in</li>
+                            <li>Peri-peri Chicken</li>
+                            <li>Hawaiian</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="jabaneimg">
+                    <img src="./images/images.jpeg" alt="">
+                    <img src="./images/images (1).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Order">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 id="form-title"><strong>Order</strong></h3>
+                    <form id="pizza-form">
+                        <div class="form-group">
+                            <label for="type">Type</label>
+                            <select class="form-control" id="type" required>
+                                <option value=""></option>
+                                <option value="pepperoni">Pepperoni</option>
+                                <option value="gourmet">Gourmet</option>
+                                <option value="BBQChicken-n-Macon-">BBQ Chic-n-Macon</option>
+                                <option value="peri peri chicken pizza">Peri peri chicken</option>
+                                <option value="chictikka 2">Chicken tikka</option>
+                                <option value="hawaiian bbq chicken pizza">Hawaiian-n-bbq chicken</option>
+                                <option value="deluxe-meat-pizza-it">Deluxe meat</option>
+                                <option value="roasted-vegetable-feta-pizza-">Roasted vegetable-n-feta</option>
+                                <option value="margherita">Margherita</option>
+                                <option value="Boerewors pizza">Boerewors</option>
+                                <option value="mexican wave">Mexican wave</option>
+                                <option value="double-cheese">Double cheese</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="size">Size</label>
+                            <select class="form-control" id="size" required>
+                                <option value=""></option>
+                                <option value="large">Large</option>
+                                <option value="medium">Medium</option>
+                                <option value="small">Small</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="topping">Topping</label>
+                            <select class="form-control" id="topping" required>
+                                <option value=""></option>
+                                <option value="mushroom">Mushroom</option>
+                                <option value="cheese">Cheese</option>
+                                <option value="sausage">Sausage</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="crust">Crust</label>
+                            <select class="form-control" id="crust" required>
+                                <option value=""></option>
+                                <option value="thick">Thick</option>
+                                <option value="thin">Thin</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                    <br />
+                </div>
+                <div class="col-md-6 hidden" id="orders-div">
+                    <h3>Your Orders</h3>
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Type</th>
+                                <th scope="col">Topping</th>
+                                <th scope="col">Crust</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-summary"></tbody>
+                    </table>
+                    <p class="delivery-cost hidden">
+                        Delivery: Ksh. <span id="delivery-amount"></span>
+                    </p>
+                    <p class="total-amount hidden">
+                        Total: Ksh. <span id="total-amount"></span>
+                    </p>
+                    <br /><br />
+                    <button class="btn btn-primary hidden" id="checkout">Checkout</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="checkout-options hidden">
+            <h3 class="fed">Checkout Form</h3>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="delivery">Delivery Option</label>
+                    <select class="form-control" id="delivery-option" required>
+                        <option value=""></option>
+                        <option value="deliver">Deliver</option>
+                        <option value="collect">Collect</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="location hidden">
+            <form id="location-form">
+                <h3>Enter Location</h3>
+                <div class="form-group">
+                    <label>Estate</label>
+                    <input type="text" class="form-control" id="estate" placeholder="Estate Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="house">House Number</label>
+                    <input type="text" class="form-control" id="house-number" placeholder="House Number" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        </section>
+
+
+
+
 
 </body>
 
