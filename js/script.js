@@ -131,6 +131,7 @@ $(document).ready(function () {
       $(".total-amount").show();
     });
     $("#delivery").click(function () {
-      alert("Dear customer you will receive your order after 30minutes")
+      prompt("Dear customer enter your location")
+      alert("You will receive your order after 30 minites, thanks")
   });
 });
