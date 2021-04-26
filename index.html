@@ -14,7 +14,7 @@
 
 <body>
     <div class="topnav">
-        <a href="#Contact us">Contact us</a>
+        <a href="#Contact-us">Contact us</a>
         <a href="#Order">Order</a>
         <a href="#Services">Services</a>
         <a href="#Home">Home</a>
@@ -40,13 +40,13 @@
                 <div class="about">
                     <div class="aboutme">
                         <h2><strong>Services Offered</strong></h2>
-                        <ul>
+                        <ol>
                             <li>Soft Drinks</li>
-                            <LI>Chicken-in</LI>
+                            <li>Chicken-in</li>
                             <li>Pizza-in</li>
                             <li>Peri-peri Chicken</li>
                             <li>Hawaiian</li>
-                        </ul>
+                        </ol>
                         </p>
                     </div>
                 </div>
@@ -57,6 +57,9 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
     <div id="Order">
         <div class="container">
             <div class="row">
@@ -103,15 +106,16 @@
                             <label for="crust">Crust</label>
                             <select class="form-control" id="crust" required>
                                 <option value=""></option>
-                                <option value="thick">Thick</option>
-                                <option value="thin">Thin</option>
+                                <option value="thick">Crispy</option>
+                                <option value="thin">Stuffed</option>
+                                <option value="Gluten-free">Gluten-free</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Book</button>
+                        <button type="submit" class="btn btn-primary">Order</button>
                     </form>
                     <br />
                 </div>
-                <div class="col-md-6 hidden" id="orders-div">
+                <div class="col-md-4 hidden" id="your-orders">
                     <h3>Your Orders</h3>
                     <table class="table table-striped table-dark">
                         <thead>
@@ -130,37 +134,33 @@
                     <p class="total-amount hidden">
                         Total: Ksh. <span id="total-amount"></span>
                     </p>
-                    <br /><br />
-                    <button class="btn btn-primary hidden" id="checkout">Checkout</button>
-                </div>
+                </div>                
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <div class="checkout-options hidden">
-            <h3 class="fed">Checkout Form</h3>
-            <form id="checkout-form">
-                <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required />
-                </div>
-                <div class="form-group">
-                    <label for="delivery">Delivery Option</label>
-                    <select class="form-control" id="delivery-option" required>
-                        <option value=""></option>
-                        <option value="deliver">Deliver</option>
-                        <option value="collect">Collect</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+        <div id="delivery">
+            <button class="btn btn-primary hidden" id="checkout">Delivery</button>
         </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div>
+        <footer>
+            <h5 id="end">Copyright 2021@</h5>
+            <div id="Contact-us">
+                <img src="./images/facebook.png">
+                <img src="./images/flickr.png">
+                <img src="./images/g_plus.png">
+                <img src="./images/skype.png">
+                <img src="./images/you_tube.png">
+                <img src="./images/pinterest.png">
+                <img src="./images/dribble.png">
+                <img src="./images/twitter.png">
+            </div>
 
 
-
-
-
+        </footer>
+        
 </body>
 
 </html>
