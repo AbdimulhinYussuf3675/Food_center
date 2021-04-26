@@ -2,7 +2,7 @@
 ## Author
 - [Abdimulhin Adan](https://github.com/AbdimulhinYussuf3675)
 ## Description
-This is basically a studio website, that takes users name and opinions.
+This is basically a piza restrant website, that takes the customer's order and also delivers right to where the customer lives
 ## Setup/Installation Requirements
 * This is a great place
 * to list setup instructions
@@ -10,7 +10,7 @@ This is basically a studio website, that takes users name and opinions.
 * easy-to-understand
 * To access this project on your local files, you can clone it using these steps:
 Open your terminal
-Use this command to clone "https://github.com/AbdimulhinYussuf3675/Delani-studio"_
+Use this command to clone "https://github.com/AbdimulhinYussuf3675/Jabane_Pizza-inn"_
 ## Technologies Used
 1. HTML
 2. CSS
