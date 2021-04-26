@@ -30,7 +30,9 @@
     background-size: cover;
     padding-top: 600px;
     color: black;
-    font-size: 17px;
+    font-size: 20px;
+    font-style: inherit;
+
 }
 
 #intro {
@@ -38,7 +40,6 @@
     margin-left: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
-    margin-left: 0px;
     text-align: center;
 }
 
@@ -67,10 +68,20 @@
     box-shadow: 5px 5px 5px 5px lightgray;
     margin: 0 0 0 70px;
 }
-
-.jabaneimg:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
 #Services{
     text-align: center;
+}
+#Order{
+    background-color: rgb(214, 180, 180);
+}
+#delivery{
+    margin-left: 50%;
+    
+}
+#Contact-us{
+        margin-left: 30%;
+
+}
+#end{
+    margin-left: 30%;
 }
